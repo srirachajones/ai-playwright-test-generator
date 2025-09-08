@@ -12,7 +12,9 @@
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
     "test:single": "playwright test --workers=1",
-    "install-deps": "npm install"
+    "install-deps": "npm install",
+    "setup-git": "node setup-repository.js",
+    "verify-git": "git status && git remote -v && git log --oneline -5"
   },
   "keywords": [
     "playwright",
