@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "setup-git": "node setup-repository.js",
-    "verify-git": "git status && git remote -v && git log --oneline -5",
-    "push-to-github": "git push -u origin main || git push -u origin master",
-    "check-repo": "echo 'Repository URL: https://github.com/srirachajones/ai-playwright-test-generator'"
-  }
-}
