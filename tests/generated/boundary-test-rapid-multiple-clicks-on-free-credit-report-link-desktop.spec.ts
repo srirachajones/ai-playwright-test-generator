@@ -14,7 +14,7 @@ test.describe('Boundary Test: Rapid Multiple Clicks on Free Credit Report Link',
       await Promise.all([
         page.click('a[href*="credit-report"]'),
         // TODO: Customize navigation timeout or handling based on observed behavior
-        page.waitForNavigation({ waitUntil: 'networkidle' }),
+        page.waitForLoadState('networkidle'),
       ]).catch(e => {
         console.error('Error handling rapid clicks or navigation:', e);
       });

@@ -58,19 +58,19 @@ export class VisualTestHelper {
         setTimeout(() => {
           this.classList.remove('playwright-highlight');
         }, 3000);
-        return originalClick.apply(this, arguments);
+        return originalClick.call(this);
       };
 
       // Override input events for form fields
       const originalFocus = HTMLInputElement.prototype.focus;
-      HTMLInputElement.prototype.focus = function() {
+      HTMLInputElement.prototype.focus = function(options?: FocusOptions) {
         this.style.boxShadow = '0 0 10px #ff6b35';
         this.style.border = '2px solid #ff6b35';
         setTimeout(() => {
           this.style.boxShadow = '';
           this.style.border = '';
         }, 2000);
-        return originalFocus.apply(this, arguments);
+        return originalFocus.call(this, options);
       };
     });
   }
