@@ -1,0 +1,47 @@
+{
+  "name": "experian",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "generate-tests": "tsx scripts/generate-tests.ts",
+    "test-mcp": "tsx scripts/test-mcp-connection.ts",
+    "validate-selectors": "tsx scripts/validate-selectors.ts",
+    "validate-selectors-live": "tsx scripts/validate-selectors-live.ts",
+    "analyze-generated-tests": "tsx scripts/analyze-generated-tests.ts",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:single": "playwright test --workers=1",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "ai",
+    "rag",
+    "agents"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "AI-powered Playwright test generation framework with RAG and agentic design",
+  "dependencies": {
+    "@langchain/anthropic": "^0.1.15",
+    "@langchain/core": "^0.1.52",
+    "@langchain/ollama": "^0.0.1",
+    "@langchain/openai": "^0.0.14",
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "@playwright/mcp": "^0.0.36",
+    "dotenv": "^16.3.1",
+    "langchain": "^0.1.25"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1",
+    "playwright": "^1.55.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "zod": "^4.1.5"
+  }
+}

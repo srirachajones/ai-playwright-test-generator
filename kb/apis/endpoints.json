@@ -1,0 +1,57 @@
+{
+  "experian_auth": {
+    "login": "POST /api/v1/auth/login",
+    "logout": "POST /api/v1/auth/logout",
+    "signup": "POST /api/v1/auth/register",
+    "verify_email": "POST /api/v1/auth/verify-email",
+    "reset_password": "POST /api/v1/auth/reset-password",
+    "refresh_token": "POST /api/v1/auth/refresh"
+  },
+  "credit_services": {
+    "get_credit_report": "GET /api/v1/credit/report",
+    "get_credit_score": "GET /api/v1/credit/score",
+    "get_fico_score": "GET /api/v1/credit/fico-score",
+    "request_boost": "POST /api/v1/credit/boost",
+    "boost_status": "GET /api/v1/credit/boost/status",
+    "credit_monitoring": "GET /api/v1/credit/monitoring",
+    "dispute_item": "POST /api/v1/credit/dispute"
+  },
+  "identity_protection": {
+    "dark_web_scan": "POST /api/v1/protection/dark-web-scan",
+    "privacy_scan": "POST /api/v1/protection/privacy-scan",
+    "fraud_alert": "POST /api/v1/protection/fraud-alert",
+    "security_freeze": "POST /api/v1/protection/security-freeze",
+    "identity_monitoring": "GET /api/v1/protection/monitoring"
+  },
+  "smart_money": {
+    "create_account": "POST /api/v1/banking/smart-money/create",
+    "account_balance": "GET /api/v1/banking/smart-money/balance",
+    "transaction_history": "GET /api/v1/banking/smart-money/transactions",
+    "direct_deposit": "POST /api/v1/banking/smart-money/direct-deposit"
+  },
+  "credit_cards": {
+    "get_matches": "POST /api/v1/credit-cards/matches",
+    "prequalify": "POST /api/v1/credit-cards/prequalify",
+    "apply": "POST /api/v1/credit-cards/apply",
+    "card_details": "GET /api/v1/credit-cards/{cardId}"
+  },
+  "insurance": {
+    "auto_quotes": "POST /api/v1/insurance/auto/quotes",
+    "compare_rates": "GET /api/v1/insurance/auto/compare",
+    "policy_details": "GET /api/v1/insurance/policy/{policyId}",
+    "update_policy": "PUT /api/v1/insurance/policy/{policyId}"
+  },
+  "bill_management": {
+    "analyze_bills": "POST /api/v1/bills/analyze",
+    "negotiate_bill": "POST /api/v1/bills/negotiate",
+    "cancel_subscription": "POST /api/v1/bills/cancel-subscription",
+    "savings_report": "GET /api/v1/bills/savings-report"
+  },
+  "user_profile": {
+    "get_profile": "GET /api/v1/user/profile",
+    "update_profile": "PUT /api/v1/user/profile",
+    "preferences": "GET /api/v1/user/preferences",
+    "update_preferences": "PUT /api/v1/user/preferences",
+    "delete_account": "DELETE /api/v1/user/account"
+  }
+}

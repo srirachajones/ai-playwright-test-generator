@@ -1,0 +1,57 @@
+{
+  "experian_header": {
+    "logo": "[alt*='Experian logo']",
+    "sign_in_button": "a[href*='sign']",
+    "search_button": "button[aria-label='Search']"
+  },
+  "main_navigation": {
+    "credit_dropdown": "button.m-n-link.btn-reset.dropdown-toggle[aria-label='Credit']",
+    "protection_dropdown": "button.m-n-link.btn-reset.dropdown-toggle[aria-label='Protection']",
+    "money_dropdown": "button.m-n-link.btn-reset.dropdown-toggle[aria-label='Money']",
+    "credit_cards_dropdown": "button.m-n-link.btn-reset.dropdown-toggle[aria-label='Credit Cards']",
+    "loans_dropdown": "button.m-n-link.btn-reset.dropdown-toggle[aria-label='Loans']",
+    "insurance_dropdown": "button.m-n-link.btn-reset.dropdown-toggle[aria-label='Insurance']",
+    "nav_dropdown_generic": "button.m-n-link.btn-reset.dropdown-toggle[aria-expanded='false']"
+  },
+  "credit_section": {
+    "free_credit_report_link": "a[href*='credit-report']",
+    "free_credit_score_link": "a[href*='credit-score']",
+    "experian_boost_link": "a[href*='boost']",
+    "experian_go_link": "a[href*='go']"
+  },
+  "protection_section": {
+    "identity_theft_link": "a[href*='identity'], a[href*='theft']",
+    "dark_web_scan_link": "a[href*='dark-web'], a[href*='scan']",
+    "privacy_scan_link": "a[href*='privacy'], a[href*='scan']"
+  },
+  "money_section": {
+    "digital_checking_link": "a[href*='checking'], a[href*='account']",
+    "smart_money_link": "a[href*='smart-money'], a[href*='experian-smart']",
+    "manage_expenses_link": "a[href*='expenses'], a[href*='manage']"
+  },
+  "credit_cards_section": {
+    "all_credit_cards_link": "a[href*='credit-card'], a[href*='cards']",
+    "balance_transfer_link": "a[href*='balance-transfer']",
+    "cash_back_link": "a[href*='cash-back']",
+    "bad_credit_link": "a[href*='bad-credit']"
+  },
+  "insurance_section": {
+    "auto_insurance_link": "a[href*='auto-insurance'], a[href*='insurance']"
+  },
+  "support_section": {
+    "security_freeze_link": "a[href*='freeze'], a[href*='security']",
+    "disputes_link": "a[href*='dispute']",
+    "fraud_alert_link": "a[href*='fraud']",
+    "contact_us_link": "a[href*='contact']"
+  },
+  "forms": {
+    "submit_button": "button[type='submit'], input[type='submit'], .submit-btn"
+  },
+  "homepage_main_sections": {
+    "credit_report_fico_text": "span.d-block.h7.mb-0",
+    "no_ding_text": "span.d-block.h7",
+    "car_insurance_text": "span.d-block.h7",
+    "smart_money_text": "span.d-block.h7",
+    "main_section_text": "span.d-block.h7.mb-0"
+  }
+}
